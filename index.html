@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +43,7 @@
             <div class="midTop">
                 <div class="picandInput">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDgJ-0ARA7rl9xZiw-ZopNW-n86gCVwYw0CA&usqp=CAU" alt="">
-                    <input type="text" placeholder="What is happening?">
+                    <input id="input" type="text" placeholder="What is happening?">
                 </div>
                 <div class="icons">
                     <div class="icon">
@@ -55,13 +53,15 @@
                         <a href="#"><i class="fa-regular fa-calendar-check"></i></a>
                     </div>
                     <div class="tweettweet">
-                        <a href="#">Tweet</a>
+                        <span onclick="newTweet()">Tweet</span>
                     </div>
                     
                 </div>
             </div>
             <div class="midTweets">
-
+                <ul id="myUL">
+                    
+                </ul>
             </div>
         </div>
         <div class="rightMenu">
@@ -138,7 +138,7 @@
             </div>
         </div>
     </div>
-
+<script src="index.js"></script>
 </body>
 
 </html>

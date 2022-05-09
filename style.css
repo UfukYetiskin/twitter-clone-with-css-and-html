@@ -309,7 +309,7 @@ body {
           justify-content: space-between;
 }
 
-.grid-container .midMenu .midTop .icons .tweettweet a {
+.grid-container .midMenu .midTop .icons .tweettweet span {
   background-color: #1d9bf0;
   color: white;
   text-decoration: none;
@@ -321,5 +321,18 @@ body {
 .grid-container .midMenu .midTop .icons .icon a i {
   padding: 10px;
   font-size: 18px;
+}
+
+.grid-container .midMenu .midTweets ul {
+  width: 100%;
+  list-style-type: none;
+}
+
+.grid-container .midMenu .midTweets ul li {
+  font-size: 24px;
+  text-align: start;
+  padding: 20px;
+  list-style-type: none;
+  border: 1px solid #eff3f4;
 }
 /*# sourceMappingURL=style.css.map */

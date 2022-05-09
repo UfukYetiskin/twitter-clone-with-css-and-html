@@ -263,7 +263,7 @@ body {
                 justify-content: space-between;
 
                 .tweettweet {
-                    a {
+                    span {
                         background-color: #1d9bf0;
                         color: white;
                         text-decoration: none;
@@ -281,6 +281,21 @@ body {
                         }
                     }
 
+                }
+            }
+        }
+        .midTweets{
+            ul{
+                width: 100%;
+                list-style-type: none;
+
+                li{
+                    font-size: 24px;
+                    text-align: start;
+                    padding: 20px;
+                    list-style-type: none;
+                    border: 1px solid #eff3f4;
+                    
                 }
             }
         }
