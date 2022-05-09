@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.leftMenu{
+    grid-area: left;
+}
+.midMenu{
+    grid-area: mid;
+}
+.rightMenu{
+    grid-area: right;
+}
+
+.grid-container{
+    display: grid;
+    grid-template:
+    'left left mid mid mid right right';
+    justify-content: space-around;
+    background-color: #ffffff;
+    width: 90%;
+    gap: 10px;
+    padding: 10px;
+    .leftMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top{
+            .home, .explore, .comminities, .notifications, .messages, .bookmarks, .profile, .more{
+                a{ 
+                    font-size: 24px;
+                    text-decoration: none;
+                    color: black;
+                    i{
+                        padding: 20px;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .logo{
+                font-size: 28px;
+                text-decoration: none;
+                color: #1d9bf0;
+                i{
+                    padding: 20px;
+                    font-size: 24px;
+                }
+            }
+            .tweet{
+                background-color: #1d9bf0;
+                width: 12rem;
+                padding: 10px;
+                border-radius: 50px;
+                text-align: center;
+                margin-top: 10px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    
+                }
+
+            }
+        }
+        .bottom{
+            align-items: flex-end;
+            margin-top: 65%;
+            background-color: #eff3f4;
+            justify-content: space-around;
+            .profil-tag{
+                display: flex;
+                flex-direction: row;
+                .photo{
+                    padding: 5px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+                .nameInfo{
+                    margin: 10px 0 10px 5px;
+                    h5{
+                        font-weight: bold;
+                    }
+                    h6{
+                        color: #eff3f4;
+                    }
+                }
+            }
+        }
+    }
+}

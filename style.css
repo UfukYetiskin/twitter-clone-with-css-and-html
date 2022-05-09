@@ -1,0 +1,136 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+}
+
+.leftMenu {
+  grid-area: left;
+}
+
+.midMenu {
+  grid-area: mid;
+}
+
+.rightMenu {
+  grid-area: right;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template: 'left left mid mid mid right right';
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffffff;
+  width: 90%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container .leftMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid-container .leftMenu .top .home a, .grid-container .leftMenu .top .explore a, .grid-container .leftMenu .top .comminities a, .grid-container .leftMenu .top .notifications a, .grid-container .leftMenu .top .messages a, .grid-container .leftMenu .top .bookmarks a, .grid-container .leftMenu .top .profile a, .grid-container .leftMenu .top .more a {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.grid-container .leftMenu .top .home a i, .grid-container .leftMenu .top .explore a i, .grid-container .leftMenu .top .comminities a i, .grid-container .leftMenu .top .notifications a i, .grid-container .leftMenu .top .messages a i, .grid-container .leftMenu .top .bookmarks a i, .grid-container .leftMenu .top .profile a i, .grid-container .leftMenu .top .more a i {
+  padding: 20px;
+  font-size: 24px;
+}
+
+.grid-container .leftMenu .top .logo {
+  font-size: 28px;
+  text-decoration: none;
+  color: #1d9bf0;
+}
+
+.grid-container .leftMenu .top .logo i {
+  padding: 20px;
+  font-size: 24px;
+}
+
+.grid-container .leftMenu .top .tweet {
+  background-color: #1d9bf0;
+  width: 12rem;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.grid-container .leftMenu .top .tweet a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.grid-container .leftMenu .bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 65%;
+  background-color: #eff3f4;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.grid-container .leftMenu .bottom .profil-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grid-container .leftMenu .bottom .profil-tag .photo {
+  padding: 5px;
+}
+
+.grid-container .leftMenu .bottom .profil-tag .photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.grid-container .leftMenu .bottom .profil-tag .nameInfo {
+  margin: 10px 0 10px 5px;
+}
+
+.grid-container .leftMenu .bottom .profil-tag .nameInfo h5 {
+  font-weight: bold;
+}
+
+.grid-container .leftMenu .bottom .profil-tag .nameInfo h6 {
+  color: #eff3f4;
+}
+/*# sourceMappingURL=style.css.map */
