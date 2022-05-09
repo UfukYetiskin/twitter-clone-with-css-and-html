@@ -33,16 +33,17 @@ body {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-template: 'left left mid mid mid right right';
+  grid-template: 'left left  mid mid mid mid right right';
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #ffffff;
   width: 90%;
-  gap: 10px;
+  gap: 1px;
   padding: 10px;
 }
 
 .grid-container .leftMenu {
+  border-right: 1px solid #eff3f4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,13 +56,27 @@ body {
           justify-content: space-between;
 }
 
-.grid-container .leftMenu .top .home a, .grid-container .leftMenu .top .explore a, .grid-container .leftMenu .top .comminities a, .grid-container .leftMenu .top .notifications a, .grid-container .leftMenu .top .messages a, .grid-container .leftMenu .top .bookmarks a, .grid-container .leftMenu .top .profile a, .grid-container .leftMenu .top .more a {
+.grid-container .leftMenu .top .home a,
+.grid-container .leftMenu .top .explore a,
+.grid-container .leftMenu .top .comminities a,
+.grid-container .leftMenu .top .notifications a,
+.grid-container .leftMenu .top .messages a,
+.grid-container .leftMenu .top .bookmarks a,
+.grid-container .leftMenu .top .profile a,
+.grid-container .leftMenu .top .more a {
   font-size: 24px;
   text-decoration: none;
   color: black;
 }
 
-.grid-container .leftMenu .top .home a i, .grid-container .leftMenu .top .explore a i, .grid-container .leftMenu .top .comminities a i, .grid-container .leftMenu .top .notifications a i, .grid-container .leftMenu .top .messages a i, .grid-container .leftMenu .top .bookmarks a i, .grid-container .leftMenu .top .profile a i, .grid-container .leftMenu .top .more a i {
+.grid-container .leftMenu .top .home a i,
+.grid-container .leftMenu .top .explore a i,
+.grid-container .leftMenu .top .comminities a i,
+.grid-container .leftMenu .top .notifications a i,
+.grid-container .leftMenu .top .messages a i,
+.grid-container .leftMenu .top .bookmarks a i,
+.grid-container .leftMenu .top .profile a i,
+.grid-container .leftMenu .top .more a i {
   padding: 20px;
   font-size: 24px;
 }
@@ -129,11 +144,153 @@ body {
   margin: 10px 0 10px 5px;
 }
 
-.grid-container .leftMenu .bottom .profil-tag .nameInfo h5 {
+.grid-container .leftMenu .bottom .profil-tag .nameInfo h4 {
   font-weight: bold;
 }
 
-.grid-container .leftMenu .bottom .profil-tag .nameInfo h6 {
+.grid-container .leftMenu .bottom .profil-tag .nameInfo h5 {
   color: grey;
+}
+
+.grid-container .rightMenu {
+  padding-left: 20px;
+  border-left: 1px solid #eff3f4;
+}
+
+.grid-container .rightMenu .right-top input {
+  background-color: #eff3f4;
+  border: 1px solid #eff3f4;
+  padding: 10px 10px 10px 20px;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.grid-container .rightMenu .right-mid {
+  background-color: #eff3f4;
+  margin-top: 10px;
+  border: 1px solid #eff3f4;
+  border-radius: 20px;
+}
+
+.grid-container .rightMenu .right-mid h2 {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.grid-container .rightMenu .right-mid .trend {
+  padding: 10px;
+}
+
+.grid-container .rightMenu .right-mid .trend h5 {
+  color: grey;
+  padding: 5px;
+}
+
+.grid-container .rightMenu .right-mid .trend h4 {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.grid-container .rightMenu .right-bottom {
+  background-color: #eff3f4;
+  margin-top: 10px;
+  border: 1px solid #eff3f4;
+  border-radius: 20px;
+}
+
+.grid-container .rightMenu .right-bottom .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px;
+}
+
+.grid-container .rightMenu .right-bottom .person a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.grid-container .rightMenu .right-bottom .person .photoandnames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.grid-container .rightMenu .right-bottom .person .photoandnames img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.grid-container .rightMenu .right-bottom .person .photoandnames .personNames {
+  padding-left: 10px;
+}
+
+.grid-container .rightMenu .right-bottom .person .photoandnames .personNames h5 {
+  color: grey;
+}
+
+.grid-container .rightMenu .right-bottom .person .photoandnames .personNames h4 {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.grid-container .midMenu .midTop {
+  border-bottom: 1px solid #eff3f4;
+}
+
+.grid-container .midMenu .midTop .picandInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 10px;
+}
+
+.grid-container .midMenu .midTop .picandInput img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.grid-container .midMenu .midTop .picandInput input {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid white;
+  font-size: 24px;
+  color: #62727e;
 }
 /*# sourceMappingURL=style.css.map */

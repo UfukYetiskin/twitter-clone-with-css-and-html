@@ -1,104 +1,257 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
 }
-.leftMenu{
+
+.leftMenu {
     grid-area: left;
 }
-.midMenu{
+
+.midMenu {
     grid-area: mid;
 }
-.rightMenu{
+
+.rightMenu {
     grid-area: right;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template:
-    'left left mid mid mid right right';
+        'left left  mid mid mid mid right right';
     justify-content: space-around;
     background-color: #ffffff;
     width: 90%;
-    gap: 10px;
+    gap: 1px;
     padding: 10px;
-    .leftMenu{
+
+    .leftMenu {
+        border-right: 1px solid #eff3f4;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        .top{
-            .home, .explore, .comminities, .notifications, .messages, .bookmarks, .profile, .more{
-                a{ 
+        .top {
+
+            .home,
+            .explore,
+            .comminities,
+            .notifications,
+            .messages,
+            .bookmarks,
+            .profile,
+            .more {
+                a {
                     font-size: 24px;
                     text-decoration: none;
                     color: black;
-                    i{
+
+                    i {
                         padding: 20px;
                         font-size: 24px;
                     }
                 }
             }
-            .logo{
+
+            .logo {
                 font-size: 28px;
                 text-decoration: none;
                 color: #1d9bf0;
-                i{
+
+                i {
                     padding: 20px;
                     font-size: 24px;
                 }
             }
-            .tweet{
+
+            .tweet {
                 background-color: #1d9bf0;
                 width: 12rem;
                 padding: 10px;
                 border-radius: 50px;
                 text-align: center;
                 margin-top: 10px;
-                a{
+
+                a {
                     color: white;
                     text-decoration: none;
                     font-weight: bold;
-                    
+
                 }
 
             }
         }
-        .bottom{
+
+        .bottom {
             align-items: flex-end;
             margin-top: 65%;
             background-color: #eff3f4;
             justify-content: space-around;
             border-radius: 50px;
             width: 12rem;
-            .profil-tag{
+
+            .profil-tag {
                 display: flex;
                 flex-direction: row;
                 border-radius: 50px;
-                .photo{
+
+                .photo {
                     padding: 5px;
-                    img{
+
+                    img {
                         width: 40px;
                         height: 40px;
                         border-radius: 50%;
                     }
                 }
-                .nameInfo{
+
+                .nameInfo {
                     margin: 10px 0 10px 5px;
-                    h5{
+
+                    h4 {
                         font-weight: bold;
                     }
-                    h6{
+
+                    h5 {
                         color: grey;
                     }
                 }
             }
         }
     }
+
+    .rightMenu {
+        padding-left: 20px;
+        border-left: 1px solid #eff3f4;
+
+        .right-top {
+            input {
+                background-color: #eff3f4;
+                border: 1px solid #eff3f4;
+                padding: 10px 10px 10px 20px;
+                border-radius: 50px;
+                width: 100%;
+                
+            }
+        }
+
+        .right-mid {
+            background-color: #eff3f4;
+            margin-top: 10px;
+            border: 1px solid #eff3f4;
+            border-radius: 20px;
+
+            h2 {
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .trend {
+                padding: 10px;
+
+                h5 {
+                    color: grey;
+                    padding: 5px;
+                }
+
+                h4 {
+                    padding-left: 5px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .right-bottom {
+            background-color: #eff3f4;
+            margin-top: 10px;
+            border: 1px solid #eff3f4;
+            border-radius: 20px;
+
+            .person {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                padding: 20px;
+
+                a {
+                    background-color: black;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    border-radius: 20px;
+                }
+
+                .photoandnames {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: center;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+
+                    .personNames {
+                        padding-left: 10px;
+
+                        h5 {
+                            color: grey;
+
+                        }
+
+                        h4 {
+                            padding-left: 5px;
+                            font-weight: bold;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+    }
+
+    .midMenu {
+        
+        
+
+        .midTop {
+            border-bottom: 1px solid #eff3f4;
+            .picandInput {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                padding: 10px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    
+                }
+                input{
+                    padding: 15px;
+                    width: 100%;
+                    border: 1px solid white;
+                    font-size: 24px;
+                    color: #62727e;
+                }
+            }
+        }
+    }
+
 }
