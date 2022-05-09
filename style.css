@@ -100,6 +100,8 @@ body {
   background-color: #eff3f4;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-radius: 50px;
+  width: 12rem;
 }
 
 .grid-container .leftMenu .bottom .profil-tag {
@@ -110,6 +112,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-radius: 50px;
 }
 
 .grid-container .leftMenu .bottom .profil-tag .photo {
@@ -131,6 +134,6 @@ body {
 }
 
 .grid-container .leftMenu .bottom .profil-tag .nameInfo h6 {
-  color: #eff3f4;
+  color: grey;
 }
 /*# sourceMappingURL=style.css.map */

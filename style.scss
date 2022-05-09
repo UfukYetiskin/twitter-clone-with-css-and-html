@@ -75,9 +75,12 @@ body{
             margin-top: 65%;
             background-color: #eff3f4;
             justify-content: space-around;
+            border-radius: 50px;
+            width: 12rem;
             .profil-tag{
                 display: flex;
                 flex-direction: row;
+                border-radius: 50px;
                 .photo{
                     padding: 5px;
                     img{
@@ -92,7 +95,7 @@ body{
                         font-weight: bold;
                     }
                     h6{
-                        color: #eff3f4;
+                        color: grey;
                     }
                 }
             }
