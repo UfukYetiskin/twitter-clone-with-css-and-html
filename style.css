@@ -293,4 +293,33 @@ body {
   font-size: 24px;
   color: #62727e;
 }
+
+.grid-container .midMenu .midTop .icons {
+  margin-left: 60px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid-container .midMenu .midTop .icons .tweettweet a {
+  background-color: #1d9bf0;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.grid-container .midMenu .midTop .icons .icon a i {
+  padding: 10px;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */

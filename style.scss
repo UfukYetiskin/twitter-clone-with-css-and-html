@@ -139,7 +139,7 @@ body {
                 padding: 10px 10px 10px 20px;
                 border-radius: 50px;
                 width: 100%;
-                
+
             }
         }
 
@@ -227,28 +227,60 @@ body {
     }
 
     .midMenu {
-        
-        
+
+
 
         .midTop {
             border-bottom: 1px solid #eff3f4;
+
             .picandInput {
                 display: flex;
                 flex-direction: row;
                 justify-content: start;
                 padding: 10px;
+
                 img {
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
-                    
+
                 }
-                input{
+
+                input {
                     padding: 15px;
                     width: 100%;
                     border: 1px solid white;
                     font-size: 24px;
                     color: #62727e;
+                }
+            }
+
+            .icons {
+                margin-left: 60px;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .tweettweet {
+                    a {
+                        background-color: #1d9bf0;
+                        color: white;
+                        text-decoration: none;
+                        padding: 10px 15px;
+                        border-radius: 20px;
+                        text-decoration: none;
+                    }
+                }
+
+                .icon {
+                    a {
+                        i {
+                            padding: 10px;
+                            font-size: 18px;
+                        }
+                    }
+
                 }
             }
         }
